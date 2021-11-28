@@ -1,4 +1,3 @@
-// see movies.js
 let moviesAndDetails = movies
 	.map((movie) => movieDetails.find((detail) => movie.title === detail.title))
 	.filter((movie) => movie !== undefined);
@@ -34,7 +33,8 @@ const titleInput = document.querySelector('#title');
 const actorInput = document.querySelector('#actor');
 const searchBtn = document.querySelector('button');
 
-const search = () => {
+const search = (e) => {
+	e.preventDefault();
 	const matchingMovieList = moviesAndDetails.filter((movie) => {
 		movies.forEach((film) => {
 			if (film.title === movie.title) {
