@@ -1,0 +1,37 @@
+body {
+	color: white;
+	background-image: url(https://www.desktopbackground.org/download/1680x1050/2012/04/15/374934_dark-website-backgrounds-wallpapers-walldevil-best-free-hd_1920x1200_h.jpg);
+}
+
+.movieList {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	padding-inline-start: 0;
+	justify-content: center;
+}
+
+.movie {
+	border: 2px solid lightgray;
+	margin: 5px;
+  background-color: black;
+}
+
+.movie,
+img {
+	max-width: 295px;
+}
+
+input {
+	margin: 4px;
+}
+
+.search {
+	width: 12px;
+}
+
+h1 {
+  color: yellow;
+	cursor: pointer;
+}
